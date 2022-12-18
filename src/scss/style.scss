@@ -1,3 +1,20 @@
 @import "base/mixins";
 @import "base/variebles";
 @import "base/fonts";
+@import "base/my_resets";
+@import "blocks/header";
+@import "blocks/promo";
+
+.center{
+    padding: 0 16px;
+}
+@media (min-width: 768px){
+    .center{
+        padding: 0 32px;
+    }
+}
+@media (min-width: 1140px){
+    .center{
+        padding: 0 calc(50% - 570px);
+    }
+}
