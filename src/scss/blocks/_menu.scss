@@ -1,0 +1,39 @@
+.menu{
+    display: none;
+    margin-left: auto;
+    max-height: 100%;
+    overflow: auto;
+    width: 232px;
+    padding-left: 34px;
+    background-color: #FFF;
+    &__close{
+        border: none;
+        background-color: inherit;
+        padding-left: 169px;
+        padding-top: 16px;
+        cursor: pointer;
+    }
+    &__title{
+        @extend .menu__link;
+        font-weight: 700;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        padding-left: 0!important;
+    }
+    &__list{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding-left: 21px; 
+    }
+}

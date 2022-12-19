@@ -1,19 +1,14 @@
 "use strict";
 
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
-        menuItem = document.querySelectorAll('.menu__item'),
-        hamburger = document.querySelector('.header__menu');
+let headerBars = document.querySelector('.header__menu'),
+    menu = document.querySelector('.menu'),
+    promoDark = document.querySelector('.promo__dark'),
+    menuClose = document.querySelector('.menu__close');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('header__menu_active');
-        menu.classList.toggle('menu_active');
-    });
+function toggleMenu() {
+    menu.classList.toggle('hidden');
+    promoDark.classList.toggle('hidden');
+}
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('menu_active');
-            menu.classList.toggle('menu_active');
-        });
-    });
-});
+headerBars.addEventListener('click', toggleMenu);
+menuClose.addEventListener('click', toggleMenu);
