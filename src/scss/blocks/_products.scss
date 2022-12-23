@@ -28,7 +28,8 @@
         left: 50%;
         transform: translateX(-50%);
         border: 1px solid #FF6A6A;
-        padding: 14px 37px;
+        width: 211px;
+        height: 47px;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
@@ -47,7 +48,7 @@
     }
 }
 @media(max-width: 425px){
-    .center{
+    .products{
         padding: 0 8px!important;
     }
 }
